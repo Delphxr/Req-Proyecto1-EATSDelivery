@@ -1,0 +1,19 @@
+ion-card {
+    border-radius: 25px;
+    --background : #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 20px;
+    }
+
+.image_card{
+    width: fill; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+.bold_text{
+    font-weight: bold;
+}
+
+
+

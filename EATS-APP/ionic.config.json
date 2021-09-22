@@ -1,0 +1,7 @@
+{
+  "name": "EATS-APP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
