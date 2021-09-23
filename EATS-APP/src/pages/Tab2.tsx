@@ -1,21 +1,21 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonSearchbar, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonFooter, IonText } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonSearchbar, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonFooter, IonText, IonSlides, IonSlide, IonImg } from '@ionic/react';
 import { IonGrid, IonRow, IonCol } from '@ionic/react';
 
 
 import React, { useState } from 'react';
 import logo from '../icons/logo.svg'
-import ExploreContainer from '../components/ExploreContainer';
+import Restaurant from '../components/card_restaurant';
+import Categoria from '../components/categoria'
 import './Tab2.css';
-import burger from '../images/burger.jpg'
+import { caretForwardCircle } from 'ionicons/icons';
+
+
 
 const Tab2: React.FC = () => {
   const [searchText, setSearchText] = useState('');
   return (
     <IonPage>
-      <IonHeader class="ion-no-border">
-        <IonToolbar>
-        </IonToolbar>
-      </IonHeader>
+
       <IonContent fullscreen>
 
 
@@ -30,17 +30,44 @@ const Tab2: React.FC = () => {
 
 
 
+        <IonCardTitle>
+          <strong className="bold_text" color="dark" style={{ marginLeft: "20px" }}>Categorias</strong>
+        </IonCardTitle>
 
-        <IonCard>
-          <img className="image_card" src={burger}/>
-          <IonCardHeader>
-            <IonCardTitle class="bold_text" color="primary">WcEats</IonCardTitle>
-          </IonCardHeader>
+        <IonSlides pager={false} scrollbar={false}>
 
-          <IonCardContent>
-            Heredia, San Pablo
-          </IonCardContent>
-        </IonCard>
+          <IonSlide>
+
+            <Categoria nombre="Hamburguesa" ruta_imagen='../assets/images/pizza.png' />
+
+            <Categoria nombre="Hamburguesa" ruta_imagen='../assets/images/pizza.png' />
+
+            <Categoria nombre="Hamburguesa" ruta_imagen='../assets/images/pizza.png' />
+
+          </IonSlide>
+
+
+          <IonSlide>
+
+            <Categoria nombre="Hamburguesa" ruta_imagen='../assets/images/pizza.png' />
+
+            <Categoria nombre="Hamburguesa" ruta_imagen='../assets/images/pizza.png' />
+
+            <Categoria nombre="Hamburguesa" ruta_imagen='../assets/images/pizza.png' />
+
+          </IonSlide>
+
+
+        </IonSlides>
+
+
+        <IonCardTitle>
+          <strong className="bold_text" color="dark" style={{ marginLeft: "20px" }}>Popular</strong>
+        </IonCardTitle>
+
+        <Restaurant nombre="WcEats" ruta_imagen="../assets/images/burger.jpg" descripcion="San Pedro, Heredia"></Restaurant>
+
+        <Restaurant nombre="Pollo Loco #1" ruta_imagen="../assets/images/burger.jpg" descripcion="San Rafael, Heredia"></Restaurant>
 
 
       </IonContent>

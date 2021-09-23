@@ -1,0 +1,23 @@
+.image_price{
+    width: fill; 
+    height: fill; 
+    object-fit: cover;
+    
+    position: absolute;
+    
+    left: 0;
+    bottom: 0;
+    margin-left: -5px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+
+.bold_text{
+    font-weight: bold;
+}
+
+
+
+.boxed {
+    border: 1px solid green ;
+  }

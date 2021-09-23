@@ -1,6 +1,9 @@
+
 {
-	"appId": "io.ionic.starter",
+	"appId": "io.ionic.eats_app",
 	"appName": "EATS-APP",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
 	"webDir": "build",
-	"bundledWebRuntime": false
-}
+	"cordova": {}
+  }

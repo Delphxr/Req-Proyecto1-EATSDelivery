@@ -1,0 +1,7 @@
+{
+  "name": "EATS-APP-ANGULAR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,51 +1,42 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonSearchbar, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonFooter, IonText } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonSearchbar, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonFooter, IonText, IonFab, IonFabButton } from '@ionic/react';
 import { IonGrid, IonRow, IonCol } from '@ionic/react';
 
 
 import React, { useState } from 'react';
 import ExploreContainer from '../components/ExploreContainer';
+import Direccion from '../components/direccion'
 import './Tab1.css';
 
 import logo from '../icons/logo.svg'
-import { close } from 'ionicons/icons';
+import { close, add } from 'ionicons/icons';
 
 const Tab1: React.FC = () => {
   const [searchText, setSearchText] = useState('');
   return (
     <IonPage>
-      <IonHeader class="ion-no-border">
-        <IonToolbar>
 
-        </IonToolbar>
-      </IonHeader>
 
       <IonContent fullscreen>
 
+      <IonFab horizontal="center" vertical="bottom" slot="fixed">
+        <IonFabButton color="danger">
 
+          <IonIcon icon={add} color="light"/>
+        </IonFabButton>
+      </IonFab>
+
+      
         <IonCardHeader>
           <IonIcon class="logo_eats_header" icon={logo}/>
           <IonCardTitle>Direcciones</IonCardTitle>
-          <IonCardTitle><h1 className="title_eats" color="dark">Eats Delivery</h1></IonCardTitle>
-          
+          <IonCardTitle><h1 className="title_eats" color="dark">Eats Delivery</h1></IonCardTitle>          
         </IonCardHeader>
 
-        <IonCard>
-          <IonCardHeader>
-            <IonCardTitle>Direccion
+        <Direccion nombre="Direccion" descripcion="prueba 1234"/>
 
-              <IonButton fill="clear" shape="round" >
-                <IonIcon slot="icon-only" color="primary" icon={close} />
-              </IonButton>
+        <Direccion nombre="Direccion 2" descripcion="prueba 1234"/>
 
-            </IonCardTitle>
-
-          </IonCardHeader>
-
-          <IonCardContent>
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel odio eget est auctor ultrices. Pellentesque ullamcorper, urna non iaculis mattis, tortor tellus varius ex, quis cursus ex neque at mi. In urna lectus, sagittis a lacus quis, imperdiet hendrerit lorem. Cras a nunc non est aliquam consectetur eget a magna.
-          </IonCardContent>
-        </IonCard>
+        <Direccion nombre="Direccion 3" descripcion="prueba 1234"/>
 
 
       </IonContent>

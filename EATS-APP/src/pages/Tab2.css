@@ -3,6 +3,10 @@ ion-card {
     --background : #ffffff;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin: 20px;
+
+  
+
+
     }
 
 .image_card{
@@ -11,9 +15,39 @@ ion-card {
     object-fit: cover;
 }
 
+
+.image_category{
+    object-fit:contain;
+    display: block;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    width: fill;
+    height:50px;
+}
+
+.button_category{
+    margin-top: 10px;
+    font-size: 35px;
+}
+
 .bold_text{
     font-weight: bold;
 }
 
+.scroll_category{
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+}
+
+.scroll_element{
+    width: 130px;
+    height: 190px;
+
+}
 
 

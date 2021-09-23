@@ -1,0 +1,12 @@
+.gradiente_efecto{
+    background: linear-gradient(168.35deg, #FE4E4E 8.69%, rgba(234, 60, 87, 0.86) 52.56%, #D82B5F 88.6%);
+}
+
+.imagen_fondo{
+
+    width: fill;
+    height: fill;
+
+
+    transform: rotate(90deg);
+}
