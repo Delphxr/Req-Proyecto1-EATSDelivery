@@ -1,12 +1,19 @@
-.gradiente_efecto{
-    background: linear-gradient(168.35deg, #FE4E4E 8.69%, rgba(234, 60, 87, 0.86) 52.56%, #D82B5F 88.6%);
+
+
+.login_button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 
-.imagen_fondo{
-
-    width: fill;
-    height: fill;
-
-
-    transform: rotate(90deg);
+.login_elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
 }

@@ -12,7 +12,7 @@ interface ContainerProps {
 
 const Restaurant: React.FC<ContainerProps> = ({ nombre, ruta_imagen, descripcion }) => {
     return (
-        <IonCard button={true} type="button">
+        <IonCard button={true} type="button" href="/RestauranteU" >
             <img className="image_card" src={ruta_imagen} />
             <IonCardHeader>
                 <IonCardTitle class="bold_text" color="primary">{nombre}</IonCardTitle>

@@ -10,9 +10,19 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle, fastFood, location, cart} from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+
+/* Importamos las paginas*/ 
+import TabsUser from './main_tabs'
+import Login from './pages/login';
+import OrdenF from './pages/orden_finalizada';
+import Categorias_res from './pages/ver_restaurantes_categoria'
+import Restaurante from './pages/restaurante'
+import Detalles from './pages/detalles_producto'
+import Historial from './pages/historial'
+import Editar_direccion from './pages/editar_direccion'
+import Register from './pages/register'
+
+import TabsRepartidor from './repartidor_tabs'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -36,36 +46,55 @@ import './theme/variables.css';
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>
-          <Route exact path="/tab1">
-            <Tab1 />
-          </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
-          </Route>
-          <Route path="/tab3">
-            <Tab3 />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/tab1" />
-          </Route>
-        </IonRouterOutlet>
-        <IonTabBar class="home_bar" slot="bottom">
-          <IonTabButton class="home_tab" tab="tab1" href="/tab1">
-            <IonIcon icon={location} />
-            <IonLabel>Direcciones</IonLabel>
-          </IonTabButton>
-          <IonTabButton class="home_tab" tab="tab2" href="/tab2">
-            <IonIcon icon={fastFood} />
-            <IonLabel>Explorar</IonLabel>
-          </IonTabButton>
-          <IonTabButton class="home_tab" tab="tab3" href="/tab3">
-            <IonIcon icon={cart} />
-            <IonLabel>Carrito</IonLabel>
-          </IonTabButton>
-        </IonTabBar>
-      </IonTabs>
+      
+      <IonRouterOutlet animated>          
+
+            <Route exact path="/login">
+              <Login />
+            </Route>
+
+            <Route exact path="/user">
+              <TabsUser />
+            </Route>
+
+            <Route exact path="/ordenF">
+              <OrdenF />
+            </Route>
+
+            <Route exact path="/CategoriaU">
+              <Categorias_res />
+            </Route>
+
+            <Route exact path="/RestauranteU">
+              <Restaurante />
+            </Route>
+
+            <Route exact path="/Detalles">
+              <Detalles />
+            </Route>
+
+            <Route exact path="/HistorialU">
+              <Historial />
+            </Route>
+
+            <Route exact path="/editar_dir">
+              <Editar_direccion />
+            </Route>
+
+            <Route exact path="/register">
+              <Register />
+            </Route>
+
+
+            <Route exact path="/rep">
+              <TabsRepartidor />
+            </Route>
+
+            <Route exact path="/">
+              <Redirect to="/login" />
+            </Route>
+
+          </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
 );

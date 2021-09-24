@@ -10,11 +10,11 @@ interface ContainerProps {
 
 const Categoria: React.FC<ContainerProps> = ({ nombre, ruta_imagen }) => {
     return (
-        <IonCard class="scroll_element" button={true} type="button">
+        <IonCard class="scroll_element" button={true} type="button" style={{margin:"8px", display:"inline-block"}} href="/CategoriaU">
             <IonImg class="image_category" src={ruta_imagen} alt="pizza.png" />
 
             <IonCardTitle>
-                <h6 className="bold_text" color="dark">{nombre}</h6>
+                <h6 className="bold_text" color="dark" style={{textAlign:"center"}}>{nombre}</h6>
             </IonCardTitle>
 
             <IonIcon class="button_category" icon={caretForwardCircle} color="primary"></IonIcon>

@@ -28,7 +28,7 @@ const Tab1: React.FC = () => {
       
         <IonCardHeader>
           <IonIcon class="logo_eats_header" icon={logo}/>
-          <IonCardTitle>Direcciones</IonCardTitle>
+          <IonCardTitle>Solicitudes</IonCardTitle>
           <IonCardTitle><h1 className="title_eats" color="dark">Eats Delivery</h1></IonCardTitle>          
         </IonCardHeader>
 

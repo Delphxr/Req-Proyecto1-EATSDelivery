@@ -1,0 +1,46 @@
+.gradiente_efecto{
+    background: linear-gradient(168.35deg, #FE4E4E 8.69%, rgba(234, 60, 87, 0.86) 52.56%, #D82B5F 88.6%);
+}
+
+.imagen_fondo{
+
+    
+    width: fill;
+    height: fill;
+    object-fit: cover;
+    
+
+    
+}
+
+
+header img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.1;
+  }
+  
+header{
+    background: linear-gradient(168.35deg, #FE4E4E 8.69%, rgba(234, 60, 87, 0.86) 52.56%, #D82B5F 88.6%);
+}
+
+.image_eats{
+    margin: auto;
+    width: 70%;
+    object-fit:contain;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+  }

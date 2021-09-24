@@ -4,15 +4,16 @@ import { close } from 'ionicons/icons';
 
 
 interface ContainerProps {
+    fecha: string,
     nombre: string;
     descripcion: string;
 }
 
-const Direccion: React.FC<ContainerProps> = ({ nombre, descripcion }) => {
+const History_element: React.FC<ContainerProps> = ({ nombre, descripcion,fecha }) => {
     return (
-        <IonCard button={true} type="button" href= "/editar_dir">
+        <IonCard>
           <IonCardHeader>
-            <IonCardTitle>{nombre}
+            <IonCardTitle>{fecha}
 
               <IonButton fill="clear" shape="round" >
                 <IonIcon slot="icon-only" color="primary" icon={close} />
@@ -22,7 +23,11 @@ const Direccion: React.FC<ContainerProps> = ({ nombre, descripcion }) => {
 
           </IonCardHeader>
 
-          <IonCardContent>
+          
+          
+          <IonCardContent color="primary">
+          <h2 className="bold_text" style={{color:"#F14253"}}>{nombre}</h2>
+   
             {descripcion}
           </IonCardContent>
         </IonCard>
@@ -30,4 +35,4 @@ const Direccion: React.FC<ContainerProps> = ({ nombre, descripcion }) => {
     );
 };
 
-export default Direccion;
+export default History_element;
