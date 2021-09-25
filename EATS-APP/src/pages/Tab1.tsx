@@ -10,8 +10,23 @@ import './Tab1.css';
 import logo from '../icons/logo.svg'
 import { close, add } from 'ionicons/icons';
 
+
+// aqui estamos generando una lista de items en html 
+function generate_items(){
+  var cantidad = 25
+  var elementos = [];
+  for (var i = 0; i < cantidad; i++) {
+    elementos.push(<Direccion nombre={"Direccion #" + String(i)} descripcion="prueba 1234"/>);
+  }
+  return elementos;}
+
+const Direcciones = generate_items();
+
+ 
+
 const Tab1: React.FC = () => {
   const [searchText, setSearchText] = useState('');
+  
   return (
     <IonPage>
 
@@ -32,11 +47,7 @@ const Tab1: React.FC = () => {
           <IonCardTitle><h1 className="title_eats" color="dark">Eats Delivery</h1></IonCardTitle>          
         </IonCardHeader>
 
-        <Direccion nombre="Direccion" descripcion="prueba 1234"/>
-
-        <Direccion nombre="Direccion 2" descripcion="prueba 1234"/>
-
-        <Direccion nombre="Direccion 3" descripcion="prueba 1234"/>
+        {Direcciones}
 
 
       </IonContent>
