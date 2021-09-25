@@ -1,6 +1,6 @@
 .home_tab{
-    --color: #FFC961;
-    --color-selected: #ffffff;
+    --color: #ffffff;
+    --color-selected: #FFC961;
     --color-focused: #fde38b;
     --ripple-color: #fcffcb;
   }
@@ -35,4 +35,26 @@ ion-button {
 .title_eats {
     font-weight: bold;
     font-size: 30px;
+}
+
+
+.pedido_recibido {
+    border-radius: 25px;
+    --background : #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.pedido_camino {
+    border-radius: 25px;
+    --background : #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border:3px solid #F14253;
+}
+
+
+.pedido_entregado {
+    border-radius: 25px;
+    --background : #ffe2e2;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border:3px solid #F14253;
 }

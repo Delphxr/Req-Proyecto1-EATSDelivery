@@ -10,9 +10,9 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle, fastFood, location, cart } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import Tab1 from './pages/repartidor_tab1';
+import Tab2 from './pages/repartidor_tab2';
+
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -47,7 +47,7 @@ const Repartidor: React.FC = () => (
                     </Route>
 
                     <Route exact path="/rep">
-                        <Redirect to="/rep/tab2" />
+                        <Redirect to="/rep/tab1" />
                     </Route>
 
                 </IonRouterOutlet>

@@ -11,6 +11,7 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle, fastFood, location, cart} from 'ionicons/icons';
 
+
 /* Importamos las paginas*/ 
 import TabsUser from './main_tabs'
 import Login from './pages/login';
@@ -23,6 +24,8 @@ import Editar_direccion from './pages/editar_direccion'
 import Register from './pages/register'
 
 import TabsRepartidor from './repartidor_tabs'
+
+import Test from './pages/database_test'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -43,7 +46,10 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+
+
 const App: React.FC = () => (
+
   <IonApp>
     <IonReactRouter>
       
@@ -90,8 +96,11 @@ const App: React.FC = () => (
               <TabsRepartidor />
             </Route>
 
+
+            
+
             <Route exact path="/">
-              <Redirect to="/login" />
+              <Redirect to="/user" />
             </Route>
 
           </IonRouterOutlet>
@@ -100,3 +109,5 @@ const App: React.FC = () => (
 );
 
 export default App;
+
+///<Route path="/home" component={Test} exact={true} />
