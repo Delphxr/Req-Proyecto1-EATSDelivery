@@ -25,7 +25,7 @@ const Login: React.FC = () => {
                     <img className="image_eats" src='../assets/images/logo_texto.png' alt="Placeholder-Image" />
 
                     <IonCard>
-                        <IonInput value={correo} placeholder="Correo Electronico" onIonChange={e => setCorreo(e.detail.value!)}></IonInput>
+                        <IonInput value={correo} placeholder="Correo Electronico" type="email" onIonChange={e => setCorreo(e.detail.value!)}></IonInput>
                     </IonCard>
 
                     <IonCard>

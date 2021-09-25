@@ -22,8 +22,11 @@ import Detalles from './pages/detalles_producto'
 import Historial from './pages/historial'
 import Editar_direccion from './pages/editar_direccion'
 import Register from './pages/register'
+import Editar_menu from './pages/editar_menu'
 
 import TabsRepartidor from './repartidor_tabs'
+import TabsOwner from './tabs_owner'
+import TabsGerente from './tabs_gerente'
 
 import Test from './pages/database_test'
 
@@ -96,11 +99,22 @@ const App: React.FC = () => (
               <TabsRepartidor />
             </Route>
 
+            <Route exact path="/owner">
+              <TabsOwner />
+            </Route>
+
+            <Route exact path="/editar_menu">
+              <Editar_menu />
+            </Route>
+
+            <Route exact path="/gerente">
+              <TabsGerente />
+            </Route>
 
             
 
             <Route exact path="/">
-              <Redirect to="/user" />
+              <Redirect to="/login" />
             </Route>
 
           </IonRouterOutlet>

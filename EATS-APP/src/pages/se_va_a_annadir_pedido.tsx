@@ -1,3 +1,4 @@
+
 import { IonContent, IonHeader, IonInput, IonPage, IonTitle, IonSearchbar, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonFooter, IonText, IonSlides, IonSlide, IonImg } from '@ionic/react';
 import { IonGrid, IonRow, IonCol } from '@ionic/react';
 
@@ -24,19 +25,15 @@ const Login: React.FC = () => {
                 <div className="login_elements">
                     <img className="image_eats" src='../assets/images/logo_texto.png' alt="Placeholder-Image" />
 
-                    <h1 className="bold_text" style={{ textAlign: "center", fontSize: "45px", overflow: "hidden" }}>Seleccione el nuevo estado del pedido</h1>
-
-
-                    <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "white", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
-                        <strong className="bold_text" style={{ color: "#D82B5F" }}>Recibido</strong>
+                    <h1 className="bold_text" style={{ textAlign: "center", fontSize: "45px", overflow: "hidden" }}>Se va a añadir este pedido a tu lista!</h1>
+                  
+                    <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "#FFC961", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
+                        <strong className="bold_text" style={{ color: "white" }}>confirmar</strong>
                     </IonButton>
 
-                    <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "white", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
-                        <strong className="bold_text" style={{ color: "#D82B5F" }}>En Camino</strong>
-                    </IonButton>
 
                     <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "white", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
-                        <strong className="bold_text" style={{ color: "#D82B5F" }}>Enviado</strong>
+                        <strong className="bold_text" style={{ color: "#D82B5F" }}>cancelar</strong>
                     </IonButton>
                 </div>
 

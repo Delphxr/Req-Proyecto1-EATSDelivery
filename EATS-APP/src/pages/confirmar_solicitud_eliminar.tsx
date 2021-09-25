@@ -24,19 +24,16 @@ const Login: React.FC = () => {
                 <div className="login_elements">
                     <img className="image_eats" src='../assets/images/logo_texto.png' alt="Placeholder-Image" />
 
-                    <h1 className="bold_text" style={{ textAlign: "center", fontSize: "45px", overflow: "hidden" }}>Seleccione el nuevo estado del pedido</h1>
+                    <h1 className="bold_text" style={{ textAlign: "center", fontSize: "45px", overflow: "hidden" }}>Seguro que desea solicitar la eliminacion del restaurante?</h1>
+                    <h3 style={{ textAlign: "center" }}>esta accion no se puee deshacer</h3>
 
-
-                    <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "white", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
-                        <strong className="bold_text" style={{ color: "#D82B5F" }}>Recibido</strong>
+                    <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "#FFC961", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
+                        <strong className="bold_text" style={{ color: "white" }}>confirmar</strong>
                     </IonButton>
 
-                    <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "white", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
-                        <strong className="bold_text" style={{ color: "#D82B5F" }}>En Camino</strong>
-                    </IonButton>
 
                     <IonButton shape="round" size="large" fill="clear"  style={{ float: "none", width: "calc(100% - 40px)", background: "white", borderRadius: "50px",marginLeft: "20px", marginTop:"20px" }}>
-                        <strong className="bold_text" style={{ color: "#D82B5F" }}>Enviado</strong>
+                        <strong className="bold_text" style={{ color: "#D82B5F" }}>cancelar</strong>
                     </IonButton>
                 </div>
 

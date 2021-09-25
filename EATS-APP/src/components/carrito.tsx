@@ -13,6 +13,8 @@ interface ContainerProps {
     cantidad: number;
 }
 
+
+
 const Carrito: React.FC<ContainerProps> = ({ nombre, ruta_imagen, precio, cantidad }) => {
     return (
         <IonCard>
